@@ -8,4 +8,4 @@ def bookPrice(x:Int):Double=x*24.95
 //Discount
 def discount(amount:Double):Double=amount*0.4
 //Shipping cost
-def ShippingCost(x:Int):Double=3*x+(x-50)*0.75
+def ShippingCost(x:Int):Double={if(x<=50) 3*x else (3*x+(x-50)*0.75)}
